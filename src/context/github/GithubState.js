@@ -51,7 +51,7 @@ const GithubState = (props) => {
     setLoading();
 
     const res = await axios.get(
-      `https://api.github.com/users/${username}/repos?per_page=5&sort=created:asc`
+      `https://api.github.com/users/${username}/repos?per_page=7&sort=created:asc`
     );
 
     dispatch({
